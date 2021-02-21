@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Navbar msg="Welcome to Your Vue.js App"/>
+    <Dashboard msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Dashboard from './components/Dashboard.vue'
+import Navbar from './components/Navbar.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Dashboard,
+    Navbar
   }
 }
 </script>
@@ -22,7 +23,14 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #bababa;
+  /* margin-top: 60px; */
+}
+.common-card,select {
+    font-size: 12px;
+     color: #bababa !important;
+}
+canvas{
+  max-width: 100% !important;
 }
 </style>
